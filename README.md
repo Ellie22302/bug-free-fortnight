@@ -37,4 +37,8 @@ npm start
     
 ## Screenshots
 
+![Screenshot 2024-04-15 215452](https://github.com/Ellie22302/bug-free-fortnight/assets/146311968/3f3e234f-d756-4709-8cef-cd2c61013961)
+![Screenshot 2024-04-15 215440](https://github.com/Ellie22302/bug-free-fortnight/assets/146311968/371eaef5-e5fd-4269-a01d-e9a2eb547dba)
+![Screenshot 2024-04-15 215444](https://github.com/Ellie22302/bug-free-fortnight/assets/146311968/e0905f3d-c127-4be0-8380-1c20be069c20)
+![Screenshot 2024-04-15 215448](https://github.com/Ellie22302/bug-free-fortnight/assets/146311968/a5fe459c-be37-45fa-87de-173af3ff0f9b)
 
