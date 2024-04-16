@@ -12,13 +12,10 @@ const { type } = require('os');
 
 var uniqueID;
 
-
 const app = express();
-
 const PORT = process.env.PORT || 3001;
 
 app.use(express.urlencoded({ extended: false }));
-
 app.use(express.json());
 
 app.use(express.static('public'));
@@ -36,25 +33,22 @@ app.get('/notes/api', (req, res) => {
     res.json(dbJson);
 });
 
-
 app.post('/notes/api', (req, res) => {
-
     uniqueID =  uuid.v4();
-    
     const dbJson = JSON.parse(fs.readFileSync("db/db.json","utf8"));
-
     const newNote = {
       title: req.body.title,
       text: req.body.text,
       id: uniqueID
     };
-   
-    dbJson.push(newNote);
+    
 
+
+    dbJson.push(newNote);
     fs.writeFileSync("db/db.json",JSON.stringify(dbJson));
     res.json(dbJson);
   });
 
-  app.listen(PORT, () =>
+app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)
 );
